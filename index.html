@@ -28,7 +28,7 @@
                   <ion-icon name="menu-outline" id="icon-nav"></ion-icon>
 
                 </div>
-                <div class="menu-modal" id="modal-menu">
+                <div class="menu-modal" id="modal-menu" style="visibility: hidden;">
 
                   <ul class="menu-modal-list">
                     <li>About</li>
@@ -174,7 +174,19 @@
 <script>
       document.getElementById('icon-nav').addEventListener("click",()=>{
 
-                document.getElementById('modal-menu').style.visibility = "visible";
+
+                var visi=document.querySelector('.menu-modal').style.visibility;
+              
+
+                if(visi === "hidden")
+                {
+                  document.querySelector('.menu-modal').style.visibility = "visible";
+                }
+                else
+                {
+                  document.querySelector('.menu-modal').style.visibility = "hidden";
+                }
+                
       });
 </script>
 </body>
