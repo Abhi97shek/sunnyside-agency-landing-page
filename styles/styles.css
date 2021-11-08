@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+   
+}
+
+.header
+{
+    background-image: url("../images/desktop/image-header.jpg");
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.para_mobile
+{
+    display: none;
+}
+.img-logo-div
+{
+    flex:1;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+   
+    padding: 1.5rem 2rem 0 2rem;
+}
+.logo-image
+{ 
+    
+    height: 2rem;
+
+}
+
+.navbar-icon
+{
+    display: none;
+}
+.menu-list
+{
+    display: flex;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    color:white;
+    font-size: 18px;
+     box-sizing: border-box;
+    justify-content: space-around;
+    flex-basis: 40rem;
+    align-items: center;
+}
+
+
+.contact-menu
+{
+    background-color: white;
+    color: black;
+    border-radius: 3rem;
+    font-family: 'Fraunces', serif;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+}
+.contact-menu:hover{
+    background-color: #6ECFFF;
+    box-shadow: black;
+}
+.header-info_heading
+{
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 8px;
+}
+.header-info{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 11rem;
+}
+
+.down-image-arrow{
+    margin-top: 6rem;
+}
+
+.image-brand
+{
+    display: flex;
+}
+.image-brand_image
+{
+    width: 50%;
+}
+
+.image-brand_image img
+{
+    width: 100%;
+    height: 100%;
+}
+.image-brand_details
+{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center; 
+}
+
+.image-brand_details_header
+{
+    font-size: 40px;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 2rem;
+}
+
+.image-brand_details_para
+{
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    color: hsl(210, 4%, 67%);
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.image-brand_details_learn
+{
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    position: relative;
+    transition: all .3s;
+}
+
+.image-brand_details_learn::after
+{
+    content: ' ';
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    opacity: .5;
+    left: 0;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 10px;
+    z-index: -1;
+
+}
+.image-brand_details_learn:hover::after
+{
+    opacity: 1;
+}
+.image-audience
+{
+    display: flex;
+    
+}
+
+.image-brand_details_audience_learn
+{
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    transition: all .3s;
+    position: relative;
+}
+
+.image-brand_details_audience_learn::after{
+
+    content: ' ';
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    opacity: .5;
+    left: 0;
+    background-color: hsl(7, 99%, 70%);
+    border-radius: 10px;
+    z-index: -1;
+}   
+.image-brand_details_audience_learn:hover::after
+{
+    opacity: 1;
+}
+.gallery-last
+{
+    display: flex;
+}
+
+.image-graphic-design
+{
+    text-align: center;
+    width: 50%;
+    position: relative;
+}
+.info
+{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+.text-center
+{
+   
+   font-size: 40px;
+   font-family: 'Fraunces', serif;
+   color: hsl(167, 40%, 24%);
+}
+
+.info p{
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.image-photography{
+    
+    text-align: center;
+    position: relative;
+    width: 50%;
+}
+
+
+.image-gallery
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    
+}
+.image-gallery img
+{
+    width: 100%;
+    height: 100%;
+}
+.testimonials
+{
+    margin-top: 10rem;
+}
+.testimonials_heading
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 8px;
+    color: hsl(210, 4%, 67%);
+}
+.graphic-design_image-mobile
+{
+    display: none;
+}
+.people_details
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.person-1
+{
+    text-align: center;
+}
+
+.person-1 img
+{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.person-1 p
+{
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow', sans-serif;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.person-1 h1
+{
+    margin-top: 2rem;
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.person-position
+{
+    color: hsl(210, 4%, 67%) !important;
+    margin-top: 1rem!important;
+    font-size: 14px;
+}
+
+.image-gallery
+{
+    margin-top: 10rem;
+}
+
+.footer_info
+{
+    background-color: #90d4c5;
+    
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.logo img{
+    width: 10rem;
+    filter: invert(46%) sepia(55%) saturate(317%) hue-rotate(
+118deg) brightness(55%) contrast(93%);
+}
+
+.footer-menu-list
+{
+    justify-content: center!important;
+    margin-top: 2rem;
+    color: hsl(167, 40%, 24%);
+}
+
+.footer-li
+{
+    margin-right:3.5rem;
+    
+}
+.footer-li:hover
+{
+    color: white;
+    cursor: pointer;
+}
+.social
+{
+    margin-top: 3.5rem;
+    padding-bottom: 4rem;
+    margin-left: 1.4rem;
+}
+
+.social img{
+    margin-right: 1rem;
+
+}
+
+.social img:hover
+{
+    filter: brightness(0) invert(1);
+}
+
+@media only screen and (max-width:600px){
+    .header
+    {
+        background-image: url("../images/mobile/image-header.jpg");
+      
+    }
+    .menu-list
+    {
+        display: none;
+    }
+   
+    .header-info
+    {
+            font-size: 25px;
+            margin-top:6rem;
+    }
+    .logo-image 
+    {
+        height: 1.5rem;
+    }
+    .navbar-icon
+    {
+        display: inline-block;
+    }
+    ion-icon
+    {
+        color: white;
+        font-size: 40px;
+    }
+    .image-brand
+    {
+        flex-direction: column;
+    }
+   
+    .image-brand_image{
+        width: 100%;
+        order:1;
+    }
+    .image-brand_details
+    {
+        width: 100%;
+        order:2;
+        text-align: center;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .image-brand_details_para
+    {
+        font-size: 15px;
+    }
+    .image-brand_details_header
+    {
+        font-size: 30px;
+    }
+    .image-audience
+    {
+        flex-direction: column;
+    }
+    .gallery-last
+    {
+        flex-direction: column;
+    }
+    .image-graphic-design
+    {
+        width: 100%;
+        /* background-image: url("../images/mobile/image-graphic-design.jpg");
+        background-size: cover */
+    }
+    /* .image-graphic-design img{
+        visibility: hidden;
+       
+    } */
+    .para_mobile
+    {
+        display: inline-block;
+    }
+    .para_desktop
+    {
+        display: none;
+    }
+    .image-photography
+    {
+        width: 100%;
+    }
+    .testimonials
+    {
+        margin-top: 4rem;
+    }
+    .testimonials_heading h1
+    {
+        font-size: 15px;
+    }
+    .people_details
+    {
+        flex-direction: column;
+    }
+    .person-1
+    {
+        margin-bottom: 4rem;
+    }
+    .image-gallery
+    {
+        margin-top: 0rem;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .graphic-design_image-pc
+    {
+        display: none;
+    }
+    .graphic-design_image-mobile{
+            width: 100%;
+            display:block;
+    }
+
+    .footer-menu-list
+    {
+        display: flex;
+        
+        padding: 0 2rem 0 2rem;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+
+    .header-info_heading
+    {
+        font-size: 30px;
+    }  
+    .info
+    {
+        width: 100%;
+    }
+    .text-center
+    {
+        font-size: 30px;
+    }
+
+    .info p{
+        font-size: 14px;
+        line-height: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .down-image-arrow
+    {
+        margin-top: 4.4rem;
+    }
+    .header-info_heading
+    {
+        font-size: 35px;
+    }
+    .para_mobile
+    {
+        padding: 1rem;
+    }
+    .image-brand_details_header
+    {
+        font-size: 25px;
+    }
+    /* .person-1 p{
+        padding: 0 .6rem 0 .6rem;
+    } */
+}
